@@ -1,0 +1,105 @@
+@charset "utf-8";
+* {
+    margin: 0;
+    border: none;
+    outline: none;
+}
+html{
+    background: url(../images/bg.jpg)50% 0 fixed;
+}
+h1, h2, h3 {
+    text-indent: -9999em;
+}
+@-webkit-keyframes arm {
+    from { -webkit-transform: rotate(0deg); }
+    70% { -webkit-transform: rotate(9.7deg); }
+    to { -webkit-transform: rotate(0deg); }
+}
+
+@-webkit-keyframes pointer {
+    from { -webkit-transform: rotate(0deg) scaleY(1); }
+    25% { -webkit-transform: rotate(-90deg) scaleY(0.9); }
+    50% { -webkit-transform: rotate(-180deg) scaleY(1); }
+    75% { -webkit-transform: rotate(-270deg) scaleY(0.8); }
+    to { -webkit-transform: rotate(-360deg) scaleY(1); }
+}
+@-moz-keyframes arm {
+    from { -moz-transform: rotate(0deg); }
+    70% { -moz-transform: rotate(9.7deg); }
+    to { -moz-transform: rotate(0deg); }
+}
+@-moz-keyframes pointer {
+    from { -moz-transform: rotate(0deg) scaleY(1); }
+    25% { -moz-transform: rotate(-90deg) scaleY(0.9); }
+    50% { -moz-transform: rotate(-180deg) scaleY(1); }
+    75% { -moz-transform: rotate(-270deg) scaleY(0.8); }
+    to { -moz-transform: rotate(-360deg) scaleY(1); }
+}
+#header {
+    bottom:0;
+    width: 100%;
+    height: 431px;
+    background: url(../images/header.png) bottom left no-repeat;
+    border-bottom: solid 10px #000;
+    position: fixed;
+}
+#arm {
+    position: absolute;
+    -webkit-transform-origin: 0% 60%;/*改变图形的中心 0是水平，60%是垂直，在这张图片里刚好是在手肘部位，已手肘为中心旋转*/
+    -webkit-animation: arm 3.9s ease-in-out infinite alternate;
+    -moz-transform-origin: 0% 60%;
+    -moz-animation: arm 3.9s ease-in-out infinite alternate;
+    left: 360px;
+    bottom: 0;
+    width: 246px;
+    height: 210px;
+    background: url(../images/arm.png);
+}
+#eye {
+    position: absolute;
+    left: 282px;
+    top: 269px;
+    width: 28px;
+    height: 26px;
+    background: url(../images/eye.gif);
+}
+#pointer1 {
+    position: absolute;
+    left: 257px;
+    top: 177px;
+    width: 9px;
+    height: 23px;
+    background: url(../images/pointer1.png);
+    -webkit-transform-origin: 5.5px 18px;
+    -webkit-animation: pointer 4s linear infinite;
+    -moz-transform-origin: 5.5px 18px;
+    -moz-animation: pointer 4s linear infinite;
+    -moz-transform: rotate(55deg);
+    -o-transform-origin: 5.5px 18px;
+    -o-transform: rotate(55deg);
+}
+#pointer2 {
+    position: absolute;
+    left: 257px;
+    top: 177px;
+    width: 9px;
+    height: 23px;
+    background: url(../images/pointer1.png);
+    -webkit-transform-origin: 5.5px 18px;
+    -webkit-animation: pointer 9s linear infinite;
+    -moz-animation: pointer 9s linear infinite;
+    -moz-transform-origin: 5.5px 18px;
+    -moz-transform: rotate(-45deg);
+    -o-transform-origin: 5.5px 18px;
+    -o-transform: rotate(-45deg);
+}
+#line {
+    position: absolute;
+    left: 300px;
+    bottom: -10px;
+    height: 10px;
+    width: 150px;
+    background: #000;
+}
+
+

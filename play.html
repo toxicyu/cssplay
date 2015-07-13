@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet" href="css/play.css">
+</head>
+<style>
+    .img:hover{
+
+        /*-webkit-transform: scale(2);*/
+        /*-moz-transform: scale(2);*/
+        /*-ms-transform: scale(2);*/
+        /*-o-transform: scale(2);*/
+        /*transform: scale(2);*/
+        /*-webkit-transform: rotate(45deg);*/
+        /*-moz-transform: rotate(45deg);*/
+        /*-ms-transform: rotate(45deg);*/
+        /*-o-transform: rotate(45deg);*/
+        /*transform: rotate(45deg);*/
+        -webkit-transform: translate(45px,5px);
+        -moz-transform: translate(45px,5px);
+        -ms-transform: translate(45px,5px);
+        -o-transform: translate(45px,5px);
+        transform: translate(45px,5px);
+    }
+    .img{
+        width:200px;
+        height:200px;
+        background: red;
+        -webkit-transition: .5s linear all;
+        -moz-transition: .5s linear all;
+        -ms-transition: .5s linear all;
+        -o-transition: .5s linear all;
+        transition: .5s linear all;
+    }
+</style>
+<body>
+<!--<div>
+    端着木鱼敲代码<sup style="color:red;">hot</sup>
+</div>
+<div class="img">
+</div>-->
+<div id="header">
+    <h1>Avast, Freelancers!</h1>
+    <div id="arm"></div>
+    <div id="eye"></div>
+    <div id="pointer1"></div>
+    <div id="pointer2"></div>
+    <div id="line"></div>
+</div>
+
+<script>
+function a(){
+	var i=0;
+	function b(){
+		console.log(++i);
+		}
+	return b;
+}
+var c=a();
+for(j=0;j<5;j++)
+{c();}
+</script>
+</body>
+</html>
